@@ -1,9 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
 
 /* Set custom variables here */
+:root {
+--dd-green: #2e483a; 
+--dd-green-rgb: 46, 72, 58; 
+--dd-light: #f6f3ed;
+--dd-light-rgb: 246, 243, 237;
+--dd-bg: #F6F3ED;
+--dd-bg-rgb: 246, 243, 237;
 
 
 
+
+/* overrides */
+--bs-primary: var(--dd-green);
+--bs-primary-rgb: var(--dd-green-rgb);
+--bs-secondary: var(--dd-bg);
+--bs-secondary-rgb: var(--dd-bg-rgb);
+--bs-text-light: var(--dd-light);
+--bs-text-light-rgb: var(--dd-light-rgb);
+
+.btn-primary {
+--bs-btn-primary: var(--dd-green);
+--bs-btn-primary-rgb: var(--dd-green-rgb);
+--bs-btn-bg: var(--dd-green);
+--bs-btn-bg-rgb: var(--dd-green-rgb);
+--bs-btn-border-color: var(--dd-green);
+--bs-btn-border-color-rgb: var(--dd-green-rgb);
+
+}
+}
+
+
+
+.logo {
+  width: 30px;}
 
 
 .navbar-brand {
@@ -25,6 +56,11 @@ h1, h2, h3 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+}
+
+.text {
+   padding-top: var(--dd-space-section);
 }
 
 #hero .d-flex {
@@ -50,4 +86,8 @@ section:not(#hero):not(#cta){
   section:not(#hero):not(#cta){
     padding: 100px 0;
   }
+}
+
+.li {
+  list-style: none;
 }
